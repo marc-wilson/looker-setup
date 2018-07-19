@@ -1,5 +1,6 @@
 import { Looker, VisualizationDefinition } from '../common/types';
 import { handleErrors } from '../common/utils';
+import './my-custom-viz.scss'
 
 declare var looker: Looker;
 
