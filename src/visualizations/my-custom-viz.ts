@@ -6,24 +6,17 @@ declare var looker: Looker;
 
 interface WhateverNameYouWantVisualization extends VisualizationDefinition {
     elementRef?: HTMLDivElement,
-    dimension?: string,
-    measure?: string,
-    alpha?: any,
-    beta?: any,
-    gamma?: any,
-    period?: any,
-    m?: any
 }
 
 const vis: WhateverNameYouWantVisualization = {
-    id: 'forecasting', // id/label not required, but nice for testing and keeping manifests in sync
-    label: 'Forecast',
+    id: 'some id', // id/label not required, but nice for testing and keeping manifests in sync
+    label: 'Some Name',
     options: {
         title: {
             type: 'string',
             label: 'Title',
             display: 'text',
-            default: 'Sales Forecast'
+            default: 'Default Text'
         }
     },
     // Set up the initial state of the visualization
